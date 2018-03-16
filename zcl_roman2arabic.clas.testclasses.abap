@@ -46,6 +46,13 @@ CLASS ltcl_roman2arabic_unit IMPLEMENTATION.
                                         exp = 3 ).
   ENDMETHOD.
 
+  METHOD input_iii_output_3.
+*   when
+    DATA(l_arabic) = r_cut->to_arabic( i_roman = 'IV').
+*   then
+    cl_abap_unit_assert=>assert_equals( act = l_arabic
+                                        exp = 4 ).
+  ENDMETHOD.
 
   METHOD teardown.
     CLEAR r_cut.
