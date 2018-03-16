@@ -1,0 +1,30 @@
+CLASS zcl_roman2arabic DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS to_arabic IMPORTING i_roman  TYPE char10
+                      RETURNING value(e_arabic)  TYPE char10.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zcl_roman2arabic IMPLEMENTATION.
+  METHOD to_arabic.
+
+    CASE i_roman.
+      WHEN 'I'.
+        e_arabic = 1.
+
+      WHEN 'II'.
+        e_arabic = 2.
+      WHEN 'III'.
+        e_arabic = 3.
+      WHEN OTHERS.
+    ENDCASE.
+  ENDMETHOD.
+
+ENDCLASS.
