@@ -10,7 +10,7 @@ CLASS ltcl_roman2arabic_unit DEFINITION FOR TESTING
       input_i_output_1 FOR TESTING,
       input_ii_output_2 FOR TESTING,
       input_iii_output_3 FOR TESTING,
-      input_iv_output_4 FOR TESTIN
+      input_iv_output_4 FOR TESTIN.
 
 ENDCLASS.
 
