@@ -9,7 +9,8 @@ CLASS ltcl_roman2arabic_unit DEFINITION FOR TESTING
       teardown,
       input_i_output_1 FOR TESTING,
       input_ii_output_2 FOR TESTING,
-      input_iii_output_3 FOR TESTING.
+      input_iii_output_3 FOR TESTING,
+      input_iv_output_4 FOR TESTIN.
 
 ENDCLASS.
 
@@ -46,6 +47,13 @@ CLASS ltcl_roman2arabic_unit IMPLEMENTATION.
                                         exp = 3 ).
   ENDMETHOD.
 
+  METHOD input_iv_output_4.
+*   when
+    DATA(l_arabic) = r_cut->to_arabic( i_roman = 'IV').
+*   then
+    cl_abap_unit_assert=>assert_equals( act = l_arabic
+                                        exp = 4 ).
+  ENDMETHOD.
 
   METHOD teardown.
     CLEAR r_cut.
