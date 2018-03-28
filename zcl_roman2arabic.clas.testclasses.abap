@@ -43,7 +43,7 @@ CLASS ltcl_roman2arabic_unit IMPLEMENTATION.
     DATA(l_arabic) = r_cut->to_arabic( i_roman = 'III').
 *   then
     cl_abap_unit_assert=>assert_equals( act = l_arabic
-                                        exp = 3 ).
+                                        exp = 4 ).
   ENDMETHOD.
 
 
