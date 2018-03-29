@@ -61,5 +61,5 @@ parallel (
         	sap_pipeline.abap_sci(LABEL,HOST,CREDENTIAL,PACKAGE,VARIANT)
         	sap_pipeline.sap_api_test(LABEL,HOST,CREDENTIAL)
         }
-	} */
+	} 
 )*/
