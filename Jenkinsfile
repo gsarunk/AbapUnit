@@ -5,7 +5,7 @@ pipeline{
         stage('Build'){
             step {
                 bat "newman run abap_unit_coverage.postman_collection.json" +
-				"--environment NPL.postman_environment.json "
+				"--environment SAPEC8Aunit.postman_environment.json"
             }
         }
     }
