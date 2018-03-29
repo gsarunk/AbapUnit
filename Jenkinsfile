@@ -1,6 +1,17 @@
-import jenkins.model.*
+*/import jenkins.model.**/
+pipeline{
+    agent any
+    stages{
+        stage('Build'){
+            step {
+                bat "newman run abap_unit_coverage.postman_collection.json" +
+				"--environment NPL.postman_environment.json "
+            }
+        }
+    }
+}	
 
-def GITURL = 'https://github.com/gsarunk/AbapUnit.git'
+/*def GITURL = 'https://github.com/gsarunk/AbapUnit.git'
 def BRANCH = 'master'
 def PIPELINE_GITURL = 'https://github.com/gsarunk/abap-ci-postman.git'
 def PACKAGE = '''ZABAPUNIT'''
@@ -51,4 +62,4 @@ parallel (
         	sap_pipeline.sap_api_test(LABEL,HOST,CREDENTIAL)
         }
 	} */
-)
+)*/
