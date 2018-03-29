@@ -3,7 +3,7 @@ pipeline{
     agent any
     stages{
         stage('Build'){
-            step {
+            steps {
                 bat "newman run abap_unit_coverage.postman_collection.json" +
 				"--environment SAPEC8Aunit.postman_environment.json"
             }
