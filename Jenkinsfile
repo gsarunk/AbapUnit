@@ -1,4 +1,4 @@
-*/import jenkins.model.**/
+/*import jenkins.model.**/
 pipeline{
     agent any
     stages{
