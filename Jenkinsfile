@@ -2,11 +2,16 @@
 pipeline{
     agent any
     stages{
-        stage('Build'){
+        stage('Unit Tests'){
             steps {
                 bat "newman run abap_unit_coverage.postman_collection.json --environment SAPEC8Aunit.postman_environment.json"
             }
         }
+	    stage('Code Inspector'){
+	    steps{
+		bat "newman run abap_sci.postman_collection.json --environment SAPEC8Aunit.postman_environment.json"
+	    }
+	    }
     }
 }	
 
