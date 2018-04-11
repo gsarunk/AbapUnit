@@ -12,7 +12,7 @@ CLASS ltcl_roman2arabic_unit DEFINITION FOR TESTING
       input_iii_output_3 FOR TESTING,
       input_iv_output_4 FOR TESTING,
       input_v_output_5 FOR TESTING,
-      input_6_output_6 FOR TESTING.
+      input_vi_output_6 FOR TESTING.
 
 ENDCLASS.
 
@@ -61,7 +61,7 @@ CLASS ltcl_roman2arabic_unit IMPLEMENTATION.
     DATA(l_arabic) = r_cut->to_arabic( i_roman = 'V').
 *   then
     cl_abap_unit_assert=>assert_equals( act = l_arabic
-                                        exp = 4 ).
+                                        exp = 5 ).
   ENDMETHOD.
 
   METHOD input_vi_output_6.
