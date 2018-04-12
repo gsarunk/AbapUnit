@@ -23,12 +23,6 @@ CLASS zcl_roman2arabic IMPLEMENTATION.
         e_arabic = 2.
       WHEN 'III'.
         e_arabic = 3.
-      WHEN 'IV'.
-        e_arabic = 4.
-      WHEN 'V'.
-      	e_arabic = 5.
-      WHEN 'VI'
-        e_arabic = 6.
       WHEN OTHERS.
     ENDCASE.
   ENDMETHOD.
