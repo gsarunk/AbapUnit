@@ -4,8 +4,8 @@ CLASS zcl_roman2arabic DEFINITION
   CREATE PUBLIC .
 
   PUBLIC SECTION.
-    METHODS to_arabic IMPORTING i_roman  TYPE char10
-                      RETURNING value(e_arabic)  TYPE char10.
+    METHODS to_arabic IMPORTING i_roman         TYPE char10
+                      RETURNING VALUE(e_arabic) TYPE char10.
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
