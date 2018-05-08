@@ -76,7 +76,7 @@
     },
     {
       "key": "exclusion",
-      "value": "{\"name\":\"ZCL_ROMAN2ARABIC\",\"type\":\"CLAS/OCI\",\"reason\":\"Ref Package\"}",
+      "value": "{\"name\":\"ZCL_ROMAN2ARA\",\"type\":\"CLAS/OCI\",\"reason\":\"Ref Package\"}",
       "enabled": true,
       "type": "text"
     },
