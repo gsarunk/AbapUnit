@@ -16,7 +16,7 @@ pipeline{
 	
 	stage('CD-Deploy To QA'){
 	    steps{
-		bat "newman run DeployToQuality.json --environment SAPEC8Aunit.postman_environment.json"
+		bat "newman run DeployToQuality.json --environment SAPEC8EnvCodeCoverage.json"
 	    }
 	}
 	}
