@@ -4,21 +4,16 @@ pipeline{
     stages{
         stage('CI-Unit Test/Coverage'){
             steps {
-                bat "newman run abap_unit_coverage.postman_collection.json --environment SAPEC8Aunit.postman_environment.json"
-		    bat "newman run abap_sci.postman_collection.json --environment SAPEC8Aunit.postman_environment.json"
+                bat "newman run Code.Coverage.json --environment SAPEC8Aunit.postman_environment.json"
+		   
             }
         }
-	    stage('CI Code Inspector'){
+	    stage('CI-Code Review'){
 	    steps{
 		bat "newman run abap_sci.postman_collection.json --environment SAPEC8Aunit.postman_environment.json"
 	    }
-	    }
-	    stage('Code Coverage'){
-	    steps{
-		bat "newman run abap_code_coverage.json --environment SAPEC8EnvCodeCoverage.json"
-	    }
-}
-    }
+	}
+	}
 }	
 
 /*def GITURL = 'https://github.com/gsarunk/AbapUnit.git'
