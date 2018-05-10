@@ -13,7 +13,6 @@ pipeline{
 		bat "newman run abap_sci.postman_collection.json --environment SAPEC8Aunit.postman_environment.json"
 	    }
 	}
-	}
 	
 	stage('CD-Deploy To QA'){
 	    steps{
