@@ -26,7 +26,17 @@ CLASS zcl_roman2arabic IMPLEMENTATION.
       WHEN 'IV'.        "Added Half line comment from Eclipse
         e_arabic = 4.
       WHEN 'V'.
+<<<<<<< Upstream, based on origin/R2-Develop-Branch
         e_arabic = 5.   "Clean up
+=======
+        e_arabic = 5.   "will be cleaned
+      WHEN 'VI'.
+        e_arabic = 6.
+      When 'VII'.
+        e_arabic = 7.
+      When 'VIII'.
+        e_arabic = 8.
+>>>>>>> 07bd067 Will be cleaned
       WHEN OTHERS.
     ENDCASE.
   ENDMETHOD.
