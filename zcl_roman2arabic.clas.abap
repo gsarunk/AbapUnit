@@ -28,7 +28,9 @@ CLASS zcl_roman2arabic IMPLEMENTATION.
       WHEN 'V'.
         e_arabic = 5.   "Added comment from GitHub amend from eclipse
       WHEN 'VI'.
-        e_arabic = 6.  
+        e_arabic = 6.
+      When 'VII'.
+        e_arabic = 7.
       WHEN OTHERS.
     ENDCASE.
   ENDMETHOD.
