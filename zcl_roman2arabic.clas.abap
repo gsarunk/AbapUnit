@@ -26,7 +26,9 @@ CLASS zcl_roman2arabic IMPLEMENTATION.
       WHEN 'IV'.        "Added Half line comment from Eclipse
         e_arabic = 4.
       WHEN 'V'.
-        e_arabic = 5.   "Clean up
+        e_arabic = 5.   "Clean up Starting
+      WHEN 'VI'.
+        e_arabic = 6.   "Roman 6 Addition        
       WHEN OTHERS.
     ENDCASE.
   ENDMETHOD.
