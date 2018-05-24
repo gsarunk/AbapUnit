@@ -32,7 +32,7 @@ CLASS zcl_roman2arabic IMPLEMENTATION.
       WHEN 'VII'.
         e_arabic = 7.   "Roman seven Addition
       WHEN 'VIII'.
-        e_arabic = 8.   "Roman VIII Addition
+        e_arabic = 8.   "Roman VIII Addition Test Background
       WHEN OTHERS.
     ENDCASE.
   ENDMETHOD.
