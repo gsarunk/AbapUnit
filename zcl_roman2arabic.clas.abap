@@ -28,7 +28,9 @@ CLASS zcl_roman2arabic IMPLEMENTATION.
       WHEN 'V'.
         e_arabic = 5.   "Clean up Starting
       WHEN 'VI'.
-        e_arabic = 6.   "Roman 6 Addition        
+        e_arabic = 6.   "Roman VI Addition
+      WHEN 'VIII'.
+        e_arabic = 8.   "Roman VIII Addition          
       WHEN OTHERS.
     ENDCASE.
   ENDMETHOD.
