@@ -26,7 +26,7 @@ CLASS zcl_roman2arabic IMPLEMENTATION.
       WHEN 'IV'.        "Added Half line comment from Eclipse
         e_arabic = 4.
       WHEN 'V'.
-        e_arabic = 5.  
+        e_arabic = 5.   "Added comment from GitHub
       WHEN OTHERS.
     ENDCASE.
   ENDMETHOD.
