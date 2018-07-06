@@ -2,17 +2,24 @@
 pipeline{
     agent any
     stages{
-        stage('Unit Tests'){
+        stage('CI-Unit Test/Coverage'){
             steps {
-                bat "newman run abap_unit_coverage.postman_collection.json --environment SAPEC8Aunit.postman_environment.json"
+                bat "newman run CodeCoverage.json --environment SAPEC8EnvCodeCoverage.json"
+		   
             }
         }
-	    stage('Code Inspector'){
+	    stage('CI-Code Review'){
 	    steps{
 		bat "newman run abap_sci.postman_collection.json --environment SAPEC8Aunit.postman_environment.json"
 	    }
+	}
+	
+	stage('CD-Deploy To QA'){
+	    steps{
+		bat "newman run DeployToQuality.json --environment SAPEC8EnvCodeCoverage.json"
 	    }
-    }
+	}
+	}
 }	
 
 /*def GITURL = 'https://github.com/gsarunk/AbapUnit.git'
