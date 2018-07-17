@@ -33,6 +33,12 @@ CLASS zcl_roman2arabic IMPLEMENTATION.
         e_arabic = 7.   "Roman seven Addition
       WHEN 'VIII'.
         e_arabic = 8.   "Roman VIII Addition Test Background
+      WHEN 'IX'.        "Added logic for 9 during GE demo
+        e_arabic = 9.
+      WHEN 'X'.         "Added logic for 9 during GE demo
+        e_arabic = 10.  "Added 10.
+      When 'X1'.
+        e_arabic = 11.  "Added 11   
       WHEN OTHERS.
     ENDCASE.
   ENDMETHOD.
