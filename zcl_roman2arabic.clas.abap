@@ -31,7 +31,8 @@ CLASS zcl_roman2arabic IMPLEMENTATION.
         e_arabic = 9.
       WHEN 'X'.           "Added logic for 9 during GE demo
         e_arabic = 10.    "Added 10.
-      When 'X1'.  
+      When 'X1'.
+        e_arabic = 11.    "Added 11   
       WHEN OTHERS.
     ENDCASE.
   ENDMETHOD.
