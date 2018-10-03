@@ -41,7 +41,8 @@ CLASS zcl_roman2arabic IMPLEMENTATION.
         e_arabic = 11.  "Added 11 .
       When 'XII'.
         e_arabic = 12.  "Added 12    
-          
+      When 'IV'.
+        e_arabic = 14.  "Added 14       
       WHEN OTHERS.
     ENDCASE.
   ENDMETHOD.
