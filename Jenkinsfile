@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('CI-Unit Test/Coverage'){
             steps {
-                bat "newman run CodeCoverage.json --environment SAPEC8EnvCodeCoverage.json"
+                sh "newman run CodeCoverage.json --environment SAPEC8EnvCodeCoverage.json"
 		   
             }
         }
